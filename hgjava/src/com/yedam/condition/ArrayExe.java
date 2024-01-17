@@ -6,7 +6,7 @@ public class ArrayExe {
 		
 		for(int i = 0; i < intAry.length; ++i)
 		{
-			intAry[i] = (int)(Math.random() * 100);
+			intAry[i] = (int)(Math.random() * 10) + 1;
 		}
 		
 		int sum1 = 0;
@@ -16,13 +16,13 @@ public class ArrayExe {
 		{
 			if (intAry[i] % 2 == 0)
 			{
-				System.out.println(intAry[i] + ": 짝수");
+				System.out.println(intAry[i] + ": 2의 배수");
 				sum1 += intAry[i];
 			}
 			
 			if (intAry[i] % 3 == 0)
 			{
-				System.out.println(intAry[i] + ": 홀수");
+				System.out.println(intAry[i] + ": 3의 배수");
 				sum2 += intAry[i];
 			}
 		}
