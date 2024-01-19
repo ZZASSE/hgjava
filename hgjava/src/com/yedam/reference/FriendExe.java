@@ -25,7 +25,7 @@ public class FriendExe
 				switch (inputNum) 
 				{
 					case 1: // 등록
-						System.out.println("이름 / 몸무게 / 점수 기입");
+						System.out.println("이름 / 몸무게 / 점수 기입"); 
 						FriendInfo newInfo = new FriendInfo(scanner.nextLine(), scanner.nextFloat(), scanner.nextInt());
 						friendInfoList.add(newInfo);
 						break;
