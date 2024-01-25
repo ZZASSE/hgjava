@@ -11,12 +11,34 @@ public class FriendExe {
 
 		while (run) {
 			System.out.println("1.등록 2.조회 3.단건조회 4.수정 5.삭제 9.종료");
-			int menu = Integer.parseInt(scanner.nextLine());
+			int menu = 0;
+			
+			while(true) {
+				try {
+					menu = Integer.parseInt(scanner.nextLine());
+					break;
+					
+				} catch (NumberFormatException ne) {
+					System.out.println("숫자만 기입");
+				}				
+			}
 
 			switch (menu) {
 			case 1: // 등록 1)이름 연락처 2)학교친구 3)회사친구
 				System.out.println("1.친구 2.학교친구 3.회사친구");
-				int subMenu = Integer.parseInt(scanner.nextLine());
+				
+				int subMenu = 0;
+				
+				while(true)
+				{
+					try {
+						subMenu = Integer.parseInt(scanner.nextLine());
+						break;
+						
+					} catch (NumberFormatException ne) {
+						System.out.println("숫자만 기입");
+					}
+				}
 
 				System.out.println("이름>>> ");
 				String name = scanner.nextLine();
